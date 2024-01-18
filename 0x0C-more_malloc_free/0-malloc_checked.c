@@ -2,11 +2,10 @@
 #include <stdio.h>
 #include "math.h"
 /**
- * create_pointer - pointer to allocates memory
- * @b: int
- * Description: allocate memory
- * Return: pointer to the allocated memory
+ * malloc_checked - Allocates memory using malloc
+ * @b:number of bytes allocate
  *
+ * Return: pointer to the allocated memory
  */
 void *malloc_checked(unsigned int b)
 {
