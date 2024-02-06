@@ -3,7 +3,7 @@
 /**
  *delete_nodeint_at_index - deletes a new node at a given position
  *@head: pointer to first element
- *@idx: the index of the node should be deleted
+ *@index: the index of the node should be deleted
  *
  *Return: 1 on succeed, -1 if failed
 */
@@ -24,7 +24,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	if (j <= index)
 		return (-1);
-	
+
 	temp = *head;
 	if (index == 0)
 	{
@@ -41,7 +41,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	if (!temp || !temp->next)
 		return (-1);
 	curr = temp->next;
-	temp->next = curr->next; 
+	temp->next = curr->next;
 	free(curr);
 	return (1);
 }
