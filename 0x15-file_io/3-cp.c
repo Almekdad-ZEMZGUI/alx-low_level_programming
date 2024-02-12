@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * creates_buffer - Allocates 1024 bytes for a buffer
+ * create_buffer - Allocates 1024 bytes for a buffer
  * @file: The name of the file buffer is storing chars for
  *
  * Return: pointer to the newly-allocated buffer
@@ -78,16 +78,13 @@ int main(int ac, char *av[])
 			free(buffer);
 			exit(99);
 		}
-
 		r = read(from, buffer, 1024);
 		to = open(av[2], O_WRONLY | O_APPEND);
 
 	} while (r > 0);
-
 	free(buffer);
 	close_file(from);
 	close_file(to);
-
 	return (0);
 }
 
