@@ -47,7 +47,7 @@ void print_magic(unsigned char *e_ident)
 }
 
 /**
- * print_class - Prints the class of an ELF header
+ * print_class - prints the class of an ELF header
  * @e_ident: pointer to an array containing the ELF class
  */
 void print_class(unsigned char *e_ident)
@@ -95,9 +95,9 @@ void print_data(unsigned char *e_ident)
 }
 
 /**
- *  * print_version - prints the version of ELF header
- *   * @e_ident: pointer to an array containing the ELF version
- *    */
+ * print_version - prints the version of ELF header
+ * @e_ident: pointer to an array containing the ELF version
+ */
 void print_version(unsigned char *e_ident)
 {
 	 printf(" Version: %d",
