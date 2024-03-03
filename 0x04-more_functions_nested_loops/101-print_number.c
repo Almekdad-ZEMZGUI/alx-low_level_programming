@@ -8,7 +8,8 @@
  */
 void print_number(int n)
 {
-	unsigned int temp, z = 1, num = n;
+	unsigned int temp, num = n;
+	double z = 1;
 
 	if (n == 0)
 		_putchar('0');
