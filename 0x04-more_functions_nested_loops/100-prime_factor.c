@@ -15,10 +15,10 @@ int main(void)
 	{
 		if (n % d == 0)
 		{
-			n /= div;
-			div++;
+			n /= d;
+			d++;
 		} else
-			div++;
+			d++;
 	}
 	printf("%lu\n", n);
 
